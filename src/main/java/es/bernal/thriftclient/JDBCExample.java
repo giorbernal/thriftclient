@@ -27,8 +27,8 @@ public class JDBCExample {
         System.out.println("Spark-Hive Thrift Server JDBC Driver Registered!");
         connection = null;
 
-        String ipAddress = "192.168.1.126";
-        int port = 10002;
+        String ipAddress = Constants.DEFAULT_IP_ADDRESS;
+        int port = Constants.DEFAULT_PORT;
         if (argv.length == 2) {
             ipAddress = argv[0];
             port = Integer.parseInt(argv[1]);
